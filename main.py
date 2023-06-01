@@ -100,7 +100,7 @@ def facebook(target):
     else:
         print(f" {ylw}[ {grn}✔{ylw} ] {grn}Facebook Found: {url}")
 def tiktok(target):
-    url=f"https://www.tiktok.com/{target}"
+    url=f"https://www.tiktok.com/@{target}"
     inp = requests.get(f"{url}").status_code
     if inp == 404:
         print(f" {ylw}[ {red}✖{ylw} ] {red}TikTok Not Found")
